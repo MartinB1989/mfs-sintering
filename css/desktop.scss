@@ -1,0 +1,247 @@
+@media screen and (min-width:1024px){
+
+    .burger{
+        display: none;
+    }
+
+    
+
+    .nav-bar{
+        padding: 0 50px 0 50px;
+        .nav-items{
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            grid-template-rows: 28px 28px;
+            justify-items: end;
+            width: 60%;
+            height: 57px;
+            margin-right: 50px;
+            
+
+            .nav-item{
+                font-size: 12px;
+                order: 1;
+
+
+            }
+
+            .tel-lang{
+                position: static;
+                flex-direction: row;
+                margin: 0;
+                grid-column: 3/7;
+                justify-self:end ;
+                order: 0;
+                .tel{
+                    font-size: 12px;
+                    margin: 0 30px 0 0;
+                }
+
+                .idiomas{
+                    align-items: center;
+                    .lang{
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            
+        }
+        .nav-out, .nav-in{
+        top:0;
+        }
+    }
+
+    // .nav-bar{
+    //     .nav-items{
+            
+    //         flex-direction: row;
+    //         justify-content: space-between;
+    //         // flex-wrap: wrap;
+    //         height: 57px;
+    //         margin: 0;
+    //         padding: 0;
+    //         width: 70%;
+
+    //         .nav-item{
+    //             font-size:12px ;
+    //             margin: 0 0 8px 0;
+    //             align-self: flex-end;
+
+    //         }
+
+    //         .tel-lang{
+    //             position: static;
+    //             flex-direction: row;
+    //             // width: 100%;
+    //             .tel{
+    //                 margin: 0;
+    //                 font-size: 12px;
+    //             }
+    //             .idiomas{
+    //                 align-items: center;
+                    
+    //                 .lang{
+    //                     font-size: 12px;
+    //                 }
+                    
+                    
+    //             }
+    //         }
+    //     }
+
+    //     .nav-out{
+    //         top: 0;
+    //     }
+    // }
+
+    // .burger{
+    //     display: none;
+    // }
+
+    .header{
+        .box{
+            width: 40%;
+            height: 350px;
+            margin: 2rem;
+        }
+        .d-none{
+            display: flex;
+        }
+
+        .popup-form{
+            display: none;
+        } 
+    }
+
+    .seccion-1{
+        .flex-1{
+            flex-direction: initial;
+            justify-content: center;
+            .flex-1-h, .flex-1-p{
+                width: 45%;
+            }
+        }
+
+        .flex-2{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .grid-lista{
+                width: 45%;
+                margin: 0;
+            }
+
+            .sectores-relevantes{
+                width: 45%;
+            }
+        }
+    }
+
+    .seccion-2{
+        height: 520px;
+        .flex-empresa{
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            margin: auto;
+            width: 85%;
+            height: 500px;
+
+            .empresa-img{
+                margin-top: 60px;
+            }
+            .esp-en-sin{
+                width: 45%;
+
+                .como-trabajamos-desktop{
+                    display: initial;
+                }
+            }
+
+            .como-trabajamos-movil{
+                display: none;
+            }
+
+           
+        }
+
+        .cards{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -200px auto 0 auto;
+            width: 80%;
+            .card-1, .card-2, .card-3{
+                width: 25%;
+                height: 250px;
+            }
+
+            .card-1{
+                margin-top: 0;
+            }
+
+            .card-2{
+                .sub-p{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+
+            .middle-down-arrow-movil{
+                display: none;
+            }
+            .middle-down-arrow-desktop{
+                display: initial;
+            }
+        }
+    }
+
+    .seccion-3{
+        .recursos, .capacidades{
+            width: 45%;
+
+            .box-inclinada{
+                padding: 20px;
+            }
+        }
+    }
+
+    .seccion-4{
+        display: flex;
+        justify-content: flex-end;
+        
+        .clientes{
+            width: 45%;
+            margin-top: 150px;
+            p{
+                width: 70%;
+            }
+        }
+    }
+
+    .seccion-5{
+        .bg-opaco{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+
+            .contacto, .formulario-de-contacto{
+                width: 40%;
+                margin: 0 50px;
+                
+            }
+
+           
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

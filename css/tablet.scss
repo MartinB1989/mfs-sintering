@@ -1,0 +1,239 @@
+@font-face {
+font-family: 'SF UI Display Ultralight';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Ultralight'), url('../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+}
+
+@font-face {
+font-family: 'SF UI Display Thin';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Thin'), url('../assets/fonts/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+}
+    
+    
+@font-face {
+font-family: 'SF UI Display Light';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Light'), url('../assets/fonts/sf-ui-display-light-58646b33e0551.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Medium';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Medium'), url('../assets/fonts/sf-ui-display-medium-58646be638f96.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Semibold';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Semibold'), url('../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Bold';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Bold'), url('../assets/fonts/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Heavy';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Heavy'), url('../assets/fonts/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'SF UI Display Black';
+font-style: normal;
+font-weight: normal;
+src: local('SF UI Display Black'), url('../assets/fonts/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+}
+
+
+$white: #ffffff;
+$whiteBGOpacity:#ffffffd9;
+$blackFont:#424242;
+$blue:#009fe4;
+$Ultralight:'SF UI Display Ultralight';
+$Thin:'SF UI Display Thin';
+$Light:'SF UI Display Light';
+$Medium:'SF UI Display Medium';
+$Semibold:'SF UI Display Semibold';
+$Bold:'SF UI Display Bold';
+$Heavy:'SF UI Display Heavy';
+$Black:'SF UI Display Black';
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box ;
+    // overflow-x: hidden;
+}
+p, a, h1, h2, h3, h4, h5, h6, li{
+    letter-spacing: 1px;
+}
+
+textarea{
+    resize: none;
+}
+main{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .header{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+        .box{
+            width: 40%;
+            height: 398px;
+            // margin: 2rem 0 2rem 20px;
+        }
+        .d-none{
+            display: block;
+        }
+
+        .btn-none{
+            display: none;
+        }
+    }
+
+    .seccion-1{
+        .flex-2{
+            display: flex;
+            margin: auto;
+            width: 95%;
+
+            .grid-lista{
+                width: 50%;
+            }
+            .sectores-relevantes{
+                width: 50%;
+
+                .black-div{
+                    .to-form{
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+    }
+
+    .seccion-2{
+
+        height: 620px;
+        margin-bottom: 150px;
+        .flex-empresa{
+            width: 85% ;
+            margin: auto;
+            .esp-en-sin{
+                .p-text{
+                    padding-left: 0;
+                }
+            }
+
+            .empresa-img{
+                .como-trabajamos-tablet{
+                    display: block;
+                    width: 40%;
+                    align-self: flex-end;
+                    text-align: center;
+                }
+            }
+
+            .como-trabajamos-movil{
+                display: none;
+            }
+        }
+
+        .cards{
+            display: flex;
+            justify-content: space-around;
+            align-items:baseline;
+            margin: auto;
+            width: 95%;
+            .card-1, .card-2, .card-3{
+                width: 32%;
+                height: 280px;
+
+                .sub{
+                    display: block;
+                    // font-size: 18px;
+                    margin: inherit 20px;
+                    padding: 0 30px;
+                }
+                
+            }
+
+            .middle-down-arrow-movil{
+                display: none;
+            }
+            .middle-down-arrow-desktop{
+                display: block;
+                margin: 0 -20px;
+                z-index: 88;
+                align-self: center;
+
+                img{
+                    width: 80px;
+                }
+            }
+        }
+    }
+
+    .seccion-3{
+        width: 95%;
+        margin: auto;
+        .recursos, .capacidades{
+            width: 45%;
+
+            .box-inclinada{
+                padding: 20px;
+            }
+        }
+    }
+
+    .seccion-4{
+        display: flex;
+        justify-content: flex-end;
+        height: 400px;
+        background-size: 100% 100%;
+        
+        .clientes{
+            width: 60%;
+            margin-top: 20px;
+            
+            p{
+                width: 85%;
+            }
+        }
+    }
+
+    .seccion-5{
+        .bg-opaco{
+            .contacto{
+                display: grid;
+                width: fit-content;
+                overflow-x: hidden;
+                grid-template-columns: 50% 50%;
+                column-gap: 20px;
+                .clientes-title{
+                    grid-column: 1/3 ;
+                }
+            }
+        }
+    }
+}
