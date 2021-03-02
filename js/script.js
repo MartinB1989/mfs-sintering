@@ -1,36 +1,77 @@
 let navItems = document.getElementById("nav-items"),
-btnBurger = document.getElementById("btn-burger"), vof = false
+vof = false,vof2 = false,
+emergente = document.getElementById("emergente"), 
+nodo = document.getElementById("formulario-emergente"),
+nuevo = nodo.cloneNode(true),
+burgerDiv = document.querySelectorAll(".burger-div"),
+cross = document.querySelectorAll(".cross");
 
 
-// MENÚ DESPLEGABLE
-btnBurger.addEventListener("click", e =>{
-    if(!vof){
-        navItems.classList.remove("nav-out");
-        navItems.classList.add("nav-in");
-        vof=true
-    }
-    else{
-        navItems.classList.remove("nav-in");
-        navItems.classList.add("nav-out");
-        vof=false;
-    }
-});
 
 document.addEventListener("click", e =>{
-    if(e.target.matches(".nav-item")){
-        
+    if(e.target.matches(".nav-item")){ 
         navItems.classList.remove("nav-in");
         navItems.classList.add("nav-out");
+        cross.forEach(el =>{
+          el.classList.add("no")
+        });
+        burgerDiv.forEach(el =>{
+          el.classList.remove("no")
+        })
         vof=false;
     }
+    else if(e.target.matches("#btn-burger") || e.target.matches(".burger")){
+
+      if(!vof){
+          navItems.classList.remove("nav-out");
+          navItems.classList.add("nav-in");
+          burgerDiv.forEach(el =>{
+            el.classList.add("no")
+          });
+          cross.forEach(el =>{
+            el.classList.remove("no")
+          })
+          vof=true
+      }
+      else{
+          navItems.classList.remove("nav-in");
+          navItems.classList.add("nav-out");
+          cross.forEach(el =>{
+            el.classList.add("no")
+          });
+          burgerDiv.forEach(el =>{
+            el.classList.remove("no")
+          })
+          vof=false;
+      }   
+    }
+    else if(e.target.matches(".sp")){
+      window.scrollTo({
+          behavior:"smooth",
+          top: document.documentElement.scrollHeight
+      })
+    }
+    else if(e.target.matches(".down-guia")){  
+      emergente.classList.remove("emergente-no")
+      emergente.appendChild(nuevo)
+      
+    }
+    else if(e.target.matches(".emergente")){
+      emergente.removeChild(nuevo)
+      emergente.classList.add("emergente-no")
+      
+    }
+
+
     
 })
+
 
 // CARROUSEL
 const items = document.querySelectorAll('.slider-img');
 const itemCount = items.length;
-const nextItem = document.querySelector('.next');
-const previousItem = document.querySelector('.previous');
+const nextItem = document.querySelectorAll('.next');
+const previousItem = document.querySelectorAll('.previous');
 let count = 0;
 
 function showNextItem() {
@@ -69,48 +110,24 @@ function keyPress(e) {
   }
 }
 
-nextItem.addEventListener('click', showNextItem);
-previousItem.addEventListener('click', showPreviousItem);
+nextItem.forEach(el => el.addEventListener('click', showNextItem));
+previousItem.forEach(el => el.addEventListener('click', showPreviousItem));
 document.addEventListener('keydown', keyPress);
 
 
-// BOTÓN QUE DIRIJE AL PIE DE LA PAGINA
-// let btnSolicitarPre = document.querySelectorAll(".btn-solicitar-presupuesto");
-
-document.addEventListener("click", e =>{
-  if(e.target.matches(".sp")){
-        window.scrollTo({
-            behavior:"smooth",
-            top: document.documentElement.scrollHeight
-        });
-  }
-        
-})
-
 // AGREGA CLASE "ACTIVE" A LA SECCIÓN VISIBLE DEL MENU DE NAVEGACIÓN
-const pantalla = () => {
-        let px ;
 
-        if(screen.width < 768) {
-            px = "-185px" 
-        } else if(screen.width < 1024){
-            px = " -350px"
-        }
-        else{
-            px = "-300px"
-        }
-
-        return px
-    }
+const pantalla = () => (screen.width < 1024) ? "-5000px" : "-320px";
+        
 const scrollSpy = () =>{
     const section = document.querySelectorAll("section[data-scroll-spy]");
     const header = document.querySelectorAll("header[data-scroll-spy]");
     const cb = (entries) =>{
-        // console.log("entries", entries)
+        
 
         entries.forEach(entry =>{
             const id = entry.target.getAttribute("id") ;
-            // console.log("entry", entry)
+            
             if(entry.isIntersecting){
                 document.querySelector(`a[data-scroll-spy][href="#${id}"]`).classList.add("active")
             } else{
@@ -119,10 +136,6 @@ const scrollSpy = () =>{
 
         })
     };
-
-
-
-
     
     const observer = new IntersectionObserver(cb, {
         rootMargin: pantalla(),
@@ -136,6 +149,7 @@ const scrollSpy = () =>{
 
 scrollSpy()
 
-let nodo = document.getElementById("formulario-emergente"),
-  nuevo = nodo.cloneNode(true)
-console.log(nuevo)
+
+
+
+ 

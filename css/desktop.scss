@@ -52,54 +52,8 @@
         }
     }
 
-    // .nav-bar{
-    //     .nav-items{
-            
-    //         flex-direction: row;
-    //         justify-content: space-between;
-    //         // flex-wrap: wrap;
-    //         height: 57px;
-    //         margin: 0;
-    //         padding: 0;
-    //         width: 70%;
-
-    //         .nav-item{
-    //             font-size:12px ;
-    //             margin: 0 0 8px 0;
-    //             align-self: flex-end;
-
-    //         }
-
-    //         .tel-lang{
-    //             position: static;
-    //             flex-direction: row;
-    //             // width: 100%;
-    //             .tel{
-    //                 margin: 0;
-    //                 font-size: 12px;
-    //             }
-    //             .idiomas{
-    //                 align-items: center;
-                    
-    //                 .lang{
-    //                     font-size: 12px;
-    //                 }
-                    
-                    
-    //             }
-    //         }
-    //     }
-
-    //     .nav-out{
-    //         top: 0;
-    //     }
-    // }
-
-    // .burger{
-    //     display: none;
-    // }
-
-    .header{
+    
+    .section-0, .emergente{
         .box{
             width: 40%;
             height: 350px;
@@ -108,10 +62,21 @@
         .d-none{
             display: flex;
         }
-
+        .box-2{
+            .s-box{
+                width: 90%;
+            }
+        }
         .popup-form{
             display: none;
         } 
+    }
+
+    .emergente{
+
+        .d-none{
+            display: none;
+        }
     }
 
     .seccion-1{
@@ -139,6 +104,62 @@
         }
     }
 
+    .emergente{
+        .box-2{
+            
+            .s-box{
+                margin: auto;
+                width: 90%;
+            }
+        }
+
+        .d-none{
+            display: block;
+        }
+    }
+
+    .carrousel{
+        .container{
+            // max-width: 800px;
+            display: flex;
+            
+            .slider{
+                padding: 20px ;
+                margin: 50px auto;
+            }
+            .button{
+                position: static;
+                display: block;
+ 
+                span{
+                    img{
+                        width: 100%;
+                        
+                    }
+                }
+            }
+ 
+            .previous{
+                margin-right: -30px;
+            }
+ 
+            .next{
+                margin-left: -30px;
+            }
+ 
+            .previous:hover span {
+             transform:  scale(1.1);
+         }
+         
+         .next:hover span {
+             transform:  scale(1.1);
+         }
+            .slider-nav{
+                display: none;
+            }
+        } 
+     }
+ 
     .seccion-2{
         height: 520px;
         .flex-empresa{

@@ -54,17 +54,23 @@
   .nav-bar .nav-out, .nav-bar .nav-in {
     top: 0;
   }
-  .header .box {
+  .section-0 .box, .emergente .box {
     width: 40%;
     height: 350px;
     margin: 2rem;
   }
-  .header .d-none {
+  .section-0 .d-none, .emergente .d-none {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .header .popup-form {
+  .section-0 .box-2 .s-box, .emergente .box-2 .s-box {
+    width: 90%;
+  }
+  .section-0 .popup-form, .emergente .popup-form {
+    display: none;
+  }
+  .emergente .d-none {
     display: none;
   }
   .seccion-1 .flex-1 {
@@ -94,6 +100,46 @@
   }
   .seccion-1 .flex-2 .sectores-relevantes {
     width: 45%;
+  }
+  .emergente .box-2 .s-box {
+    margin: auto;
+    width: 90%;
+  }
+  .emergente .d-none {
+    display: block;
+  }
+  .carrousel .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .carrousel .container .slider {
+    padding: 20px;
+    margin: 50px auto;
+  }
+  .carrousel .container .button {
+    position: static;
+    display: block;
+  }
+  .carrousel .container .button span img {
+    width: 100%;
+  }
+  .carrousel .container .previous {
+    margin-right: -30px;
+  }
+  .carrousel .container .next {
+    margin-left: -30px;
+  }
+  .carrousel .container .previous:hover span {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .carrousel .container .next:hover span {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .carrousel .container .slider-nav {
+    display: none;
   }
   .seccion-2 {
     height: 520px;

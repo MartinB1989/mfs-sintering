@@ -1,59 +1,3 @@
-@font-face {
-  font-family: 'SF UI Display Ultralight';
-  font-style: normal;
-  font-weight: normal;
-  src: local("SF UI Display Ultralight"), url("../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'SF UI Display Thin';
-  font-style: normal;
-  font-weight: normal;
-  src: local("SF UI Display Thin"), url("../assets/fonts/sf-ui-display-thin-58646e9b26e8b.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'SF UI Display Light';
-  font-style: normal;
-  font-weight: normal;
-  src: local("SF UI Display Light"), url("../assets/fonts/sf-ui-display-light-58646b33e0551.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'SF UI Display Medium';
-  font-style: normal;
-  font-weight: normal;
-  src: local("SF UI Display Medium"), url("../assets/fonts/sf-ui-display-medium-58646be638f96.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'SF UI Display Semibold';
-  font-style: normal;
-  font-weight: normal;
-  src: local("SF UI Display Semibold"), url("../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'SF UI Display Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local("SF UI Display Bold"), url("../assets/fonts/sf-ui-display-bold-58646a511e3d9.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'SF UI Display Heavy';
-  font-style: normal;
-  font-weight: normal;
-  src: local("SF UI Display Heavy"), url("../assets/fonts/sf-ui-display-heavy-586470160b9e5.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'SF UI Display Black';
-  font-style: normal;
-  font-weight: normal;
-  src: local("SF UI Display Black"), url("../assets/fonts/sf-ui-display-black-58646a6b80d5a.woff") format("woff");
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -85,21 +29,31 @@ main {
   .nav-bar .tel-lang {
     margin-bottom: 100px;
   }
-  .header {
+  .section-0, .emergente {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .header .box {
+  .section-0 .box, .emergente .box {
     width: 40%;
     height: 398px;
   }
-  .header .d-none {
+  .section-0 .box .s-box, .emergente .box .s-box {
+    width: 90%;
+  }
+  .section-0 .d-none, .emergente .d-none {
     display: block;
   }
-  .header .btn-none {
+  .section-0 .btn-none, .emergente .btn-none {
     display: none;
+  }
+  .emergente .box-2 {
+    width: 70%;
+  }
+  .emergente .box-2 .s-box {
+    margin: auto;
+    width: 90%;
   }
   .seccion-1 .flex-2 {
     display: -webkit-box;
@@ -118,6 +72,39 @@ main {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .carrousel .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .carrousel .container .slider {
+    width: 95vw;
+    padding: 20px;
+  }
+  .carrousel .container .button {
+    position: static;
+    display: block;
+  }
+  .carrousel .container .button span img {
+    width: 100%;
+  }
+  .carrousel .container .previous {
+    margin-right: -0px;
+  }
+  .carrousel .container .next {
+    margin-left: -30px;
+  }
+  .carrousel .container .previous:hover span {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .carrousel .container .next:hover span {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .carrousel .container .slider-nav {
+    display: none;
   }
   .seccion-2 {
     height: 620px;

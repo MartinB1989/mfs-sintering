@@ -154,7 +154,7 @@ main{
         color: #ffffff;
     }
 
-   .sp{
+   .sp, .down-guia{
        cursor: pointer;
    } 
 
@@ -248,14 +248,46 @@ main{
 
         
     }
-    .burger{
-        margin-right: 30px;
-        color: $blue;
-        font-size: 2rem;
+
+    .btn-burger{
+        position: absolute;
+        right: 30px;
+ 
+        .burger-container{
+            margin: 0;
+            .burger-div{
+                margin: 5px 32px 5px 0;
+                width: 35px;
+                height: 5px;
+                background-color: $blue;
+                
+            }
+
+            .no{
+                display: none;
+            }
+
+            .cross-1, .cross-2{
+                position: absolute;
+                right: 30px;     
+                width: 40px;
+                height: 5px;
+                background-color: $blue;
+            }
+
+            .cross-2{
+                transform: rotatez(45deg);
+            }
+            .cross-1{
+                transform: rotateZ(-45deg);
+            }
+        }
     }
 
+    
+
 // -------------------- HEADER -------------------------------
-    .header{
+    .section-0, .emergente{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -275,6 +307,7 @@ main{
             padding: 1rem;
             margin: 2rem 0;
             .s-box{
+                width: 100%;
                 transform: skewX(5deg);
                 padding: 0 1rem ;
             }
@@ -390,6 +423,33 @@ main{
                 margin-left: 4px;
             }
         }
+    }
+
+    .emergente{
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
+        background-image:none;
+        background-color: #000000c7;
+        z-index: 9999;
+        max-width: 1994px;
+        height: 100vh;
+
+        .box-2{
+            width: 80%;
+
+            .s-box{
+                width: 90%;
+            }
+        }
+
+        .d-none{
+            display: block;
+        }
+    }
+
+    .emergente-no{
+        display: none;
     }
 
 // ---------------SECCIÓN 1-------------------
@@ -616,13 +676,16 @@ main{
     .carrousel{
 
         .container {
-            max-width: 800px;
+            max-width: 1000px;
+            // width: 95%;
             margin: 0 auto;
-            padding: 50px;
+            // padding: 50px;
+
+           
             .slider{
                 
                 margin: auto;
-                padding: 20px 100px;
+                padding: 10px;
                 border:2px solid $blue;
             }
         
@@ -684,8 +747,11 @@ main{
                 flex: 0 0 15%;
 
                 .next{
+                    
                     img{
                         width: 100%;
+                        position: relative;
+                        top: 0;
                     }
                 }
 
@@ -715,6 +781,10 @@ main{
                 to {
                 opacity: 1;
                 }
+            }
+
+            .btn-pan{
+                display: none;
             }
         }
     }

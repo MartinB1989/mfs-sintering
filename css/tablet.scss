@@ -1,78 +1,3 @@
-@font-face {
-font-family: 'SF UI Display Ultralight';
-font-style: normal;
-font-weight: normal;
-src: local('SF UI Display Ultralight'), url('../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
-}
-
-@font-face {
-font-family: 'SF UI Display Thin';
-font-style: normal;
-font-weight: normal;
-src: local('SF UI Display Thin'), url('../assets/fonts/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
-}
-    
-    
-@font-face {
-font-family: 'SF UI Display Light';
-font-style: normal;
-font-weight: normal;
-src: local('SF UI Display Light'), url('../assets/fonts/sf-ui-display-light-58646b33e0551.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'SF UI Display Medium';
-font-style: normal;
-font-weight: normal;
-src: local('SF UI Display Medium'), url('../assets/fonts/sf-ui-display-medium-58646be638f96.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'SF UI Display Semibold';
-font-style: normal;
-font-weight: normal;
-src: local('SF UI Display Semibold'), url('../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'SF UI Display Bold';
-font-style: normal;
-font-weight: normal;
-src: local('SF UI Display Bold'), url('../assets/fonts/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'SF UI Display Heavy';
-font-style: normal;
-font-weight: normal;
-src: local('SF UI Display Heavy'), url('../assets/fonts/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'SF UI Display Black';
-font-style: normal;
-font-weight: normal;
-src: local('SF UI Display Black'), url('../assets/fonts/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
-}
-
-
-$white: #ffffff;
-$whiteBGOpacity:#ffffffd9;
-$blackFont:#424242;
-$blue:#009fe4;
-$Ultralight:'SF UI Display Ultralight';
-$Thin:'SF UI Display Thin';
-$Light:'SF UI Display Light';
-$Medium:'SF UI Display Medium';
-$Semibold:'SF UI Display Semibold';
-$Bold:'SF UI Display Bold';
-$Heavy:'SF UI Display Heavy';
-$Black:'SF UI Display Black';
 
 html, body{
     margin: 0;
@@ -93,7 +18,8 @@ main{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    
+  
+// --------MENÚ DE NAVEGACIÓN-----------
     .nav-bar{
         .nav-items{
             height: 90%;
@@ -107,8 +33,9 @@ main{
             margin-bottom: 100px;
         }
     }
-    
-    .header{
+
+// --------SECCIÓN 0 HEADER-------------
+    .section-0, .emergente{
         flex-wrap: nowrap;
         justify-content: space-around;
 
@@ -116,6 +43,10 @@ main{
             width: 40%;
             height: 398px;
             // margin: 2rem 0 2rem 20px;
+
+            .s-box{
+                width: 90%;
+            }
         }
         .d-none{
             display: block;
@@ -125,7 +56,20 @@ main{
             display: none;
         }
     }
+// -------- FORMULARIO EMERGENTE-----------
+    .emergente{
+        
+        .box-2{
+            width: 70%;
 
+            .s-box{
+                margin: auto;
+                width: 90%;
+            }
+        }
+    }
+
+// --------SECCIÓN 1 SINTERING-----------
     .seccion-1{
         .flex-2{
             display: flex;
@@ -146,6 +90,49 @@ main{
             }
         }
     }
+
+// ----------CARRUSEL---------------
+    .carrousel{
+       .container{
+           display: flex;
+           
+           .slider{
+               width:95vw ;
+               padding: 20px ;
+           }
+           .button{
+               position: static;
+               display: block;
+
+               span{
+                   img{
+                       width: 100%;
+                       
+                   }
+               }
+           }
+
+           .previous{
+               margin-right: -0px;
+           }
+
+           .next{
+               margin-left: -30px;
+           }
+
+           .previous:hover span {
+            transform:  scale(1.1);
+        }
+        
+        .next:hover span {
+            transform:  scale(1.1);
+        }
+           .slider-nav{
+               display: none;
+           }
+       } 
+    }
+
 
     .seccion-2{
 

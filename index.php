@@ -26,21 +26,29 @@
             <div class="tel-lang" id="tel-lang">
                 <p class="tel">+94683 51 33</p>
                 <div class="idiomas">
-                    <p class="lang">ES</p>
+                    <p class="lang" style="color:#424242;">ES</p>
                     <p class="lang">EN</p>
                     <p class="lang">FR</p>
                     <p class="lang">SE</p>
                 </div>
             </div>
         </div>
-        <div class="btn-burger" id="btn-burger">
-            <i class="fas fa-bars burger" id="burger"></i>
+        <div class="btn-burger burger" id="btn-burger">
+            <div class="burger burger-container">
+                <div class="burger burger-div"></div>
+                <div class="burger burger-div"></div>
+                <div class="burger burger-div"></div>
+                <div class="burger cross-1 no cross"></div>
+                <div class="burger cross-2 no cross"></div>
+            </div>
+            <!-- <i class="fas fa-bars burger" id="burger"></i>
+            <i class="fas fa-times burger burger-no" id="cruz"></i> -->
         </div>
     </nav>
 
     <main>
         <!-- HEADER  -->
-        <header class="header section" id="item0" data-scroll-spy>
+        <header class="section-0 section" id="item0" data-scroll-spy>
             <div class="box box-1" >
                 <div class="s-box">
                     <h1 class="black-title">¿Qué es el sinterisado?</h1>
@@ -61,11 +69,11 @@
                     <h1 class="text-1">Descarga la presentación
                         corporativo y conoce nuestras capacidades
                     </h1>
-                    <form action="" method="post" class="grid-form">
-                        <input type="text"  name="nombre" class="inp" placeholder="Nombre">
-                        <input type="text"  name="apellido" class="inp" placeholder="Apellido">
-                        <input type="text"  name="empresa" class="inp" placeholder="Empresa">
-                        <input type="email" name="correo" class="inp" placeholder="Correo">
+                    <form action="./php/send.php" method="post" class="grid-form">
+                        <input type="text"  name="nombre" class="inp" placeholder="Nombre" required>
+                        <input type="text"  name="apellido" class="inp" placeholder="Apellido" required>
+                        <input type="text"  name="empresa" class="inp" placeholder="Empresa" required>
+                      <input type="email" name="correo" class="inp" placeholder="Correo" required>
                         <div class="grid-child">
                             <input type="checkbox" name="checkbox" id="checkbox">
                             <label for="" class="label-checkbox">He leído y acepto la política de cookies y privacidad</label> 
@@ -80,13 +88,15 @@
                     
                 </div>
             </div>
-            <div class="popup-form btn-none">
-                <p class="p-to-popup">
+            <div class="popup-form btn-none down-guia">
+                <p class="p-to-popup down-guia">
                     Descargar presentación corporativa
                 </p>
-                <img src="assets/img/arrow.png" alt="arrow" class="arrow2">
+                <img src="assets/img/arrow.png" alt="arrow" class="arrow2 down-guia">
             </div>
         </header>
+
+        <section class="emergente emergente-no" id="emergente"></section>
         <!-- SINTERIZADO -->
         <section class="seccion-1 section" id="item1" data-scroll-spy>
             <article class="flex-1">
@@ -133,9 +143,9 @@
                         <p class="black-div-p">Sector eléctrico</p>
                         <div class="degre-box"></div>
 
-                        <div class="to-form">
-                            <p class="to-form-p">Descárgate nuestra guía sobre el sinterizado</p>
-                            <img src="assets/img/arrow.png" alt="arrow" class="arrow-3">
+                        <div class="to-form down-guia">
+                            <p class="to-form-p down-guia">Descárgate nuestra guía sobre el sinterizado</p>
+                            <img src="assets/img/arrow.png" alt="arrow" class="arrow-3 down-guia">
                         </div>
                         <div class="to-form sp">
                                 <p class="to-form-p sp">Solicita Presupuesto</p>
@@ -147,7 +157,12 @@
         
         </section>
         
-        <div class="arrow-down"><img src="assets/img/arrow-down.png" alt="arrow-down"></div>
+        <div class="arrow-down">
+            <a href="#item2">
+                <img src="assets/img/arrow-down.png" alt="arrow-down">
+            </a>
+        </div>
+        
         <section class="section" id="item2" data-scroll-spy>
             <section class="seccion-2 section" >
                 <article class="flex-empresa">
@@ -238,6 +253,11 @@
             <!-- CARROUSEL -->
             <section class="carrousel">
                 <div class="container">
+                    <button class="previous button btn-pan">
+                        <span>
+                            <img src="./assets/img/arrow-left-large.png" alt="atras">
+                        </span>
+                    </button>
                     <div class="slider">
                         <img src="./assets/img/carrusel-img/image-1.jpg" class="slider-img active" >
                         <img src="./assets/img/carrusel-img/image-2.jpg" class="slider-img" >
@@ -261,6 +281,11 @@
                         <img src="./assets/img/carrusel-img/image-20.jpg" alt="" class="slider-img">
                         <img src="./assets/img/carrusel-img/image-21.jpg" alt="" class="slider-img">   
                     </div>
+                    <button class="next button btn-pan">
+                        <span>
+                            <img src="./assets/img/arrow-right-large.png" alt="adelante">
+                        </span>
+                    </button>                    
                     <nav class="slider-nav">
                         <ul>
                             <li class="arrow">
@@ -331,7 +356,9 @@
             </section>
         </section>
         <div class="arrow-down">
+            <a href="#item3">
             <img src="assets/img/arrow-down.png" alt="arrow-down">
+            </a>
         </div>
         
         <section class="seccion-4 section" id="item3" data-scroll-spy>
@@ -355,7 +382,11 @@
         <!-- CARROUSEL -->
         <section class="carrousel"></section>
         
-        <div class="arrow-down"><img src="assets/img/arrow-down.png" alt="arrow-down"></div>
+        <div class="arrow-down">
+            <a href="#item4">
+                <img src="assets/img/arrow-down.png" alt="arrow-down">
+            </a>
+        </div>
         
         <section class="seccion-5 section" id="item4" data-scroll-spy>
             <div class="bg-opaco">
@@ -379,13 +410,13 @@
                 </article>
                 <div class="formulario-de-contacto">
                     <h1 class="contact-title">Contáctanos</h1>
-                    <form action="" class="contact-form">
+                    <form action="./php/contact.php" class="contact-form" method="post">
                         <input type="text" name="nombre" placeholder="Nombre" class="i1" required>
                         <input type="text" name="apellido" placeholder="Apellido" class="i1" required>
                         <input type="text" name="empresa" placeholder="Empresa" class="i1" required>
-                        <input type="email" name="email" placeholder="Email" class="i1" required>
+                        <input type="email" name="correo" placeholder="Email" class="i1" required>
                         <input type="tel" name="telefono" placeholder="Teléfono" class="i2" required>
-                        <textarea name="consulta" id="" cols="30" rows="10" placeholder="Consulta" class="i2"></textarea>
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Consulta" class="i2"></textarea>
                         <label for="check-1" class="i2 label-1">
                             <p>¿Desea cerrar una reunión?</p> 
                             <input type="checkbox" name="cerrar-reunion" id="check-1" class="checkbox" required>
