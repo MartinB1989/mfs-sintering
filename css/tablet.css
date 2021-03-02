@@ -75,6 +75,16 @@ main {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-bar .nav-items {
+    height: 90%;
+  }
+  .nav-bar .nav-items .nav-item {
+    font-size: 1.5rem;
+    margin: 25px 0;
+  }
+  .nav-bar .tel-lang {
+    margin-bottom: 100px;
+  }
   .header {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;

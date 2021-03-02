@@ -154,7 +154,9 @@ main{
         color: #ffffff;
     }
 
-    
+   .sp{
+       cursor: pointer;
+   } 
 
 // -------------------- BARRA DE NAVEGACIÓN----------------------------- 
  
@@ -222,12 +224,17 @@ main{
                         color:$blue;
                     }           
                 }
-            }           
+            }
+            
+            .active{
+                color: $blackFont;
+                border-top:2px solid $blackFont;
+            }
         }
 
         .nav-in{
             right: 0;
-            top: 58px;
+            top: 57px;
             transition-property: top;
             transition-duration: 0.5s;
         }

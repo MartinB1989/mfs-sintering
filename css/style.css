@@ -131,6 +131,9 @@ main {
   .sub-indice-white, .white-title, .t-subrayado-white, .sub-t1-white, .sub-t2-white {
     color: #ffffff;
   }
+  .sp {
+    cursor: pointer;
+  }
   .nav-bar {
     position: fixed;
     z-index: 999;
@@ -214,9 +217,13 @@ main {
     margin: 0 0.5rem;
     color: #009fe4;
   }
+  .nav-bar .nav-items .active {
+    color: #424242;
+    border-top: 2px solid #424242;
+  }
   .nav-bar .nav-in {
     right: 0;
-    top: 58px;
+    top: 57px;
     -webkit-transition-property: top;
     transition-property: top;
     -webkit-transition-duration: 0.5s;
@@ -1062,6 +1069,16 @@ main {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-bar .nav-items {
+    height: 90%;
+  }
+  .nav-bar .nav-items .nav-item {
+    font-size: 1.5rem;
+    margin: 25px 0;
+  }
+  .nav-bar .tel-lang {
+    margin-bottom: 100px;
+  }
   .header {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
