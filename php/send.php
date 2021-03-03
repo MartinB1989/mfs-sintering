@@ -14,7 +14,7 @@ $correo = htmlspecialchars($_POST['correo'],ENT_QUOTES,'UTF-8');
 $mail = new PHPMailer(true);
 
 try {
-    
+    // AGREGADO PARA FUNCIONAR EN LOCAL
     $mail->SMTPOptions = array(
         'ssl' => array(
         'verify_peer' => false,
@@ -27,14 +27,14 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'mfs@gmail.com';                     //SMTP username
-    $mail->Password   = 'contraseña';                               //SMTP password
+    $mail->Username   = 'larrori.11@gmail.com';                     //SMTP username
+    $mail->Password   = 'tntcnn34';                               //SMTP password
     $mail->SMTPSecure = 'tsl';         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
     $mail->setFrom($correo,$nombre." ".$apellido );
-    $mail->addAddress('receptor@gmail.com', 'MSLSintering');     //Add a recipient
+    $mail->addAddress('j.martin.b1989@gmail.com', 'Martin');     //Add a recipient
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
@@ -45,5 +45,5 @@ try {
     
     header("Location: ../index.php");
 } catch (Exception $e) {
-    echo "ALgo salio mal, vuelve a intentarlo";
+    echo "Algo salio mal, vuelve a intentarlo";
 }

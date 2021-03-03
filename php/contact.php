@@ -18,6 +18,7 @@ $mail = new PHPMailer(true);
 
 try {
     
+    // AGREGADO PARA FUNCIONAR EN LOCAL
     $mail->SMTPOptions = array(
         'ssl' => array(
         'verify_peer' => false,

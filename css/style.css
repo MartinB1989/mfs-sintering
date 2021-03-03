@@ -892,6 +892,71 @@ main {
   .seccion-4 .clientes .aval {
     margin: 0;
   }
+  @-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-250px * 7));
+    }
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-250px * 7));
+    }
+  }
+  .carrousel-2 .slider {
+    background: white;
+    -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .carrousel-2 .slider::before, .carrousel-2 .slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .carrousel-2 .slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  .carrousel-2 .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .carrousel-2 .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  .carrousel-2 .slider .slide {
+    height: 100px;
+    width: 250px;
+    padding: 0 10px;
+  }
+  .carrousel-2 .slider .slide img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
   .seccion-5 {
     background-image: url("../assets/img/AtenecionAlCliente.png");
   }
