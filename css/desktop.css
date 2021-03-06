@@ -1,9 +1,16 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
+  .t17 {
+    font-size: 24px;
+  }
   .burger {
     display: none;
   }
   .nav-bar {
     padding: 0 50px 0 50px;
+    height: 80px;
+  }
+  .nav-bar .logo {
+    width: 200px;
   }
   .nav-bar .nav-items {
     display: -ms-grid;
@@ -18,7 +25,7 @@
     margin-right: 50px;
   }
   .nav-bar .nav-items .nav-item {
-    font-size: 12px;
+    font-size: 16px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -40,7 +47,7 @@
             order: 0;
   }
   .nav-bar .nav-items .tel-lang .tel {
-    font-size: 12px;
+    font-size: 16px;
     margin: 0 30px 0 0;
   }
   .nav-bar .nav-items .tel-lang .idiomas {
@@ -49,7 +56,7 @@
             align-items: center;
   }
   .nav-bar .nav-items .tel-lang .idiomas .lang {
-    font-size: 12px;
+    font-size: 16px;
   }
   .nav-bar .nav-out, .nav-bar .nav-in {
     top: 0;
@@ -98,8 +105,14 @@
     width: 45%;
     margin: 0;
   }
+  .seccion-1 .flex-2 .grid-lista .lista-p {
+    font-size: 24px;
+  }
   .seccion-1 .flex-2 .sectores-relevantes {
     width: 45%;
+  }
+  .seccion-1 .flex-2 .sectores-relevantes .black-div .sec-rel {
+    margin-top: -45px;
   }
   .emergente .box-2 .s-box {
     margin: auto;
@@ -161,6 +174,13 @@
   .seccion-2 .flex-empresa .empresa-img {
     margin-top: 60px;
   }
+  .seccion-2 .flex-empresa .empresa-img .img-emp {
+    width: 120px;
+    margin: 0 20px;
+  }
+  .seccion-2 .flex-empresa .empresa-img .img-emp img {
+    width: 100%;
+  }
   .seccion-2 .flex-empresa .esp-en-sin {
     width: 45%;
   }
@@ -184,27 +204,79 @@
     width: 80%;
   }
   .seccion-2 .cards .card-1, .seccion-2 .cards .card-2, .seccion-2 .cards .card-3 {
-    width: 25%;
-    height: 250px;
+    width: 30%;
+    height: 300px;
   }
   .seccion-2 .cards .card-1 {
     margin-top: 0;
   }
-  .seccion-2 .cards .card-2 .sub-p {
-    margin-left: 20px;
-    margin-right: 20px;
+  .seccion-2 .cards .card-2 .pdn {
+    text-align: center;
   }
   .seccion-2 .cards .middle-down-arrow-movil {
     display: none;
   }
   .seccion-2 .cards .middle-down-arrow-desktop {
     display: initial;
+    margin: 0 -20px;
+    z-index: 2;
+  }
+  .seccion-2 .cards .middle-down-arrow-desktop img {
+    width: 80px;
+  }
+  .to-form-under-section-2 {
+    margin: 200px auto 50px auto;
   }
   .seccion-3 .recursos, .seccion-3 .capacidades {
     width: 45%;
   }
   .seccion-3 .recursos .box-inclinada, .seccion-3 .capacidades .box-inclinada {
     padding: 20px;
+  }
+  .seccion-3 .recursos .box-inclinada {
+    height: 320px;
+  }
+  .seccion-3 .recursos .box-inclinada .list-box-1 {
+    -ms-grid-columns: 55px 80%;
+        grid-template-columns: 55px 80%;
+    -ms-grid-rows: (40px)[3] 60px;
+        grid-template-rows: repeat(3, 40px) 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 20px;
+  }
+  .seccion-3 .recursos .box-inclinada .list-box-1 .eco-friendly {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .seccion-3 .recursos .rec {
+    margin-left: 40px;
+  }
+  .seccion-3 .capacidades .box-inclinada {
+    height: 320px;
+  }
+  .seccion-3 .capacidades .box-inclinada .list-box-1 {
+    -ms-grid-columns: 55px 80%;
+        grid-template-columns: 55px 80%;
+    -ms-grid-rows: (40px)[3] 60px;
+        grid-template-rows: repeat(3, 40px) 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 20px;
+  }
+  .seccion-3 .capacidades .cap {
+    text-align: end;
   }
   .seccion-4 {
     display: -webkit-box;
@@ -214,11 +286,13 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .seccion-4 .clientes {
+  .seccion-4 +
+.clientes {
     width: 45%;
     margin-top: 150px;
   }
-  .seccion-4 .clientes p {
+  .seccion-4 +
+.clientes p {
     width: 70%;
   }
   .seccion-5 .bg-opaco {
@@ -235,6 +309,9 @@
   .seccion-5 .bg-opaco .contacto, .seccion-5 .bg-opaco .formulario-de-contacto {
     width: 40%;
     margin: 0 50px;
+  }
+  .emergente-2 .formulario-de-contacto {
+    width: 60%;
   }
   footer {
     display: -webkit-box;

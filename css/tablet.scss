@@ -17,8 +17,33 @@ main{
     width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-  
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+
+    .t1{
+        line-height: 28px;
+    }
+
+    .t3{
+        font-size: 21px;
+        line-height: 20px;
+    }
+
+    .t4{
+        font-size: 19px;
+        line-height: 20px;
+    }
+
+    .t9-y-medio{
+        font-size: 17px;
+    }
+
+    .t14, .t15{
+        font-size: 17px;
+        padding: 0 20px;
+    }
+
 // --------MENÚ DE NAVEGACIÓN-----------
     .nav-bar{
         .nav-items{
@@ -83,6 +108,10 @@ main{
                 width: 50%;
 
                 .black-div{
+
+                    .sec-rel{
+                        margin-top: -45px;
+                    }
                     .to-form{
                         width: fit-content;
                     }
@@ -168,7 +197,7 @@ main{
             margin: auto;
             width: 95%;
             .card-1, .card-2, .card-3{
-                width: 32%;
+                width: 33%;
                 height: 280px;
 
                 .sub{

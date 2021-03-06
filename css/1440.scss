@@ -1,0 +1,588 @@
+@font-face {
+    font-family: 'SF UI Display Ultralight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Ultralight'), url('../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'SF UI Display Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Thin'), url('../assets/fonts/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+    }
+        
+        
+    @font-face {
+    font-family: 'SF UI Display Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Light'), url('../assets/fonts/sf-ui-display-light-58646b33e0551.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Medium'), url('../assets/fonts/sf-ui-display-medium-58646be638f96.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Semibold'), url('../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Bold'), url('../assets/fonts/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Heavy'), url('../assets/fonts/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Black'), url('../assets/fonts/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+    }
+$white: #ffffff;
+$whiteBGOpacity:#ffffffd9;
+$blackFont:#424242;
+$blue:#009fe4;
+$Ultralight:'SF UI Display Ultralight';
+$Thin:'SF UI Display Thin';
+$Light:'SF UI Display Light';
+$Medium:'SF UI Display Medium';
+$Semibold:'SF UI Display Semibold';
+$Bold:'SF UI Display Bold';
+$Heavy:'SF UI Display Heavy';
+$Black:'SF UI Display Black';
+
+
+
+
+
+@media screen and (min-width:1440px){
+    .arrow-down{
+        width: min-content;
+        margin: 30px auto;
+        
+        
+        img{
+            background-color: #c4c4c4;
+            border-radius: 50%;
+            padding: 12px;
+            margin: auto;
+            transform: scale(1.5);
+        }
+    }
+    input[type=checkbox] {
+        transform: scale(1.8);
+
+      }
+    .t1, .t2{
+        font-family: $Bold;
+        font-size: 40px;
+        line-height: 55px;
+        text-transform: uppercase;
+        color:$blackFont;
+    }
+    
+    .t3{
+        font-family: $Ultralight;
+        font-size: 32px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color:$blackFont;
+    }
+    
+    .t4, .t21{
+        font-family: $Thin;
+        font-size: 28px;
+        line-height: 30px;
+        color:$blackFont;
+    }
+    
+    .t5{
+        font-family: $Thin;
+        font-size: 16px;
+        line-height: 14px;
+        color:$white;
+    }
+    
+    .t6, .t20{
+        font-family: $Bold;
+        font-size: 25px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color:$blackFont;
+        border-bottom: 4px solid $blue;
+        width: max-content;
+    }
+    
+    .t7, .t16{
+    
+        font-family: $Semibold;
+        font-size: 30px;
+        line-height: 32px;
+        color:$blackFont;
+    
+    }
+    
+    .t8{
+        font-family: $Thin;
+        font-size: 30px;
+        line-height: 32px;
+        color:$blackFont;
+    }
+    
+    .t9{
+        font-family: $Bold;
+        font-size: 60px;
+        line-height: 35px;
+        color:$blue;
+    }
+    
+    .t9-y-medio{
+        font-family: $Thin;
+        font-size: 30px;
+        line-height: 30px;
+        color:$white;
+        margin-bottom: 4px;
+    }
+    
+    .t10{
+        font-family: $Thin;
+        font-size: 20px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        color:$blackFont;
+    }
+    
+    .t11{
+        font-family: $Light;
+        font-size: 30px;
+        line-height: 30px;
+        color:$blackFont;
+    }
+    
+    .t12, .t17{
+        font-family: $Thin;
+        font-size: 30px;
+        line-height: 32px;
+        color:$blackFont;
+    }
+    
+    .t13{
+        font-family: $Thin;
+        font-size: 18px;
+        line-height: 20px;
+        color:$blackFont;
+    }
+    
+    .t14, .t15{
+        font-family: $Thin;
+        font-size: 30px;
+        line-height: 32px;
+        color:$blackFont;
+        padding: 0 40px;
+        margin: auto;
+    }
+    
+  
+    
+    .t18{
+        font-family: $Bold;
+        font-size: 30px;
+        line-height: 28px;
+        color:$white;
+        text-align: center;
+    }
+    .t2, .t15, .t16, .t17, .t20, .t21{
+        color: $white;
+    }
+// ------ MENÚ DE NAVEGACIÓN ------------
+
+    .nav-bar{
+        display: grid;
+        grid-auto-columns: 30% 70%;
+       
+        height: 120px;
+        .nav-items{
+            grid-template-rows: 45px 45px;
+            column-gap: 20px;
+            .nav-item{
+                font-size: 20px;
+            }
+            .tel-lang{
+               
+                .tel{
+                    font-size: 20px;      
+                }
+                .idiomas{
+                   
+                    .lang{
+                        font-size: 20px; 
+                    }           
+                }
+            }
+        }
+
+    }
+
+// SECCIÓN 0 HEADER
+    .section-0, .emergente{
+        height: 75vh;
+        
+        .box{
+            height: 500px;
+        }
+
+        .box-1{
+            .calidad{
+                .calidad-img{
+                    width: 220px;
+                }
+            }
+        }
+
+        .box-2{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .s-box{
+
+                .grid-form{
+                    grid-template-rows: 60px 60px 80px 65px;
+                
+                
+                    .inp::placeholder{
+                        font-family: $Thin;
+                        color: #ffffff;
+                        font-size: 24px;
+                    }
+
+                    .grid-child{
+                        grid-column-start: 1;
+                        grid-column-end:3;
+
+                        .label-checkbox{
+                            font-family: $Thin;
+                            font-size: 20px;
+                            color: #ffffff;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .emergente{
+        height: 100%;
+    }
+// SINTERISADO Y SECTORES RELEVANTES----------
+    .seccion-1{
+        .flex-2{
+            display: flex;
+            margin: auto;
+            width: 95%;
+
+            .grid-lista{
+                width: 50%;
+
+                .lista-p{
+                    font-size: 30px;
+                }
+            }
+            .sectores-relevantes{
+                width: 50%;
+
+                .black-div{
+
+                    .sec-rel{
+                        margin-top: -55px;
+                    }
+                    .to-form{
+                        width: fit-content;
+                    }
+                    
+                    .degre-box{
+                        width: 400px;
+                        height: 12px;
+                
+                    }
+                }
+
+                
+            }
+        }
+
+        
+    }
+// EMPRESA, RECURSOS Y CAPACIDADES
+    .seccion-2{
+        height: 650px;
+        .flex-empresa{
+            width: 85%;
+            height: 550px;
+
+            .empresa-img{
+                
+                margin-top: 60px;
+                justify-content: space-between;
+                .img-emp{
+                    width: 184px;
+                    margin: 0 20px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .esp-en-sin{
+                width: 45%;
+
+                .como-trabajamos-desktop{
+                    display: initial;
+                }
+            }
+
+            .como-trabajamos-movil{
+                display: none;
+            }
+
+           
+        }
+
+        .cards{
+            margin-top: -150px;
+            .card-1, .card-2, .card-3{
+                    width: 33%;
+                   height: 400px;  
+                   display: flex;
+                    justify-content: center;
+                    align-items: center;
+            }
+
+            .card-1{
+                
+                background-color: #e4e4e4;
+                margin: 0 auto 0 auto;
+            }
+            .card-2{
+                background-color: #a5a3a4 ;
+                margin: 0 auto 0 auto;
+                .pdn {
+                    text-align: center;
+                }
+
+                
+               
+            }
+            .card-3{
+                background-color: #424242;
+                margin: 0 auto 0 auto;
+            }
+            .number{
+                margin: -30px 0 0 0;
+                font-family: $Bold;
+                font-size: 60px;
+                align-self: flex-start;
+                // line-height: -30px;
+                color: $blue;
+                padding: 0;
+            }
+
+            .card-title{
+                margin: 0;
+            }
+
+            .middle-down-arrow-desktop{
+                margin: 0 -20px;
+                z-index: 2;
+            }
+        
+        }
+    }
+
+    .to-form-under-section-2{
+      margin: 250px auto 50px auto;
+    }
+
+//----------SECCIÓN 3 RECURSOS Y CAPACIDADES----
+
+    .seccion-3{
+    
+        .recursos{        
+            .box-inclinada{
+                height: 480px;
+                .list-box-1{
+
+                    grid-template-rows: repeat(3,80px) 80px 80px ;
+                
+                    .eco-friendly{
+                        width: 100px;
+                        justify-self: flex-end;
+                        
+                    }
+                }
+            }
+        }
+
+        .capacidades{   
+            .box-inclinada{
+                height: 480px;
+                .list-box-1{
+                
+                    grid-template-rows: repeat(3,80px) 80px ;
+                    
+                    
+                }
+            }
+        }
+    }
+// -----------------CARRUSEL 2 ----------------
+.carrousel-2{
+
+    @mixin white-gradient {
+        // background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    }
+    
+    $animationSpeed: 30s;
+    
+    // Animation
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-400px * 14))}
+    }
+    
+    
+    // Styling
+    .slider {
+        height: 250px;
+        
+        
+        .slide-track {
+            animation: scroll $animationSpeed linear infinite;
+            display: flex;
+            width: calc(400px * 15);
+        }
+        
+        .slide {
+            height: 400px;
+            width: 240px;
+            margin: 0 120px;
+            img{
+                width: 400px;
+                height: 240px;
+            }
+        }
+    }
+}
+// -------------FORMULARIO DE CONTACTO ------------
+
+    .seccion-5, .emergente-2{
+        .bg-opaco{    
+            .formulario-de-contacto{
+
+                .contact-form{
+                    grid-template-rows:repeat(3, 60px) 100px 60px repeat(2, 80px)  ;
+                
+                    .i1::placeholder, .i2::placeholder{
+                        font-family: $Thin;
+                        font-size: 28px;
+                        color: #ffffff;
+                    }
+
+                    .label-1{
+                       
+                        p{
+                            font-family: $Semibold;
+                            font-size: 24px;
+                            color: $blue;
+
+                        }
+                    }
+                    .label-2{
+                        p{  
+                            margin-left: 0;
+                            font-size: 20px;
+                          
+                            
+                        }
+                    }  
+
+                    .enviar{
+                        .btn-enviar{
+                            font-size: 28px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .emergente-2{
+
+
+        .formulario-de-contacto{
+
+            width: 50%;
+            .contact-form{
+                grid-template-rows:repeat(3, 60px) 100px 60px repeat(2, 80px)  ;
+            
+                .i1::placeholder, .i2::placeholder{
+                    font-family: $Thin;
+                    font-size: 28px;
+                    color: #ffffff;
+                }
+
+                .label-1{
+                   
+                    p{
+                        font-family: $Semibold;
+                        font-size: 24px;
+                        color: $blue;
+
+                    }
+                }
+                .label-2{
+                    p{  
+                        margin-left: 0;
+                        font-size: 20px;
+                      
+                        
+                    }
+                }  
+                
+                .enviar{
+                    .btn-enviar{
+                        font-size: 28px;
+                    }
+                }
+            }
+
+        }
+
+         
+    }
+
+}

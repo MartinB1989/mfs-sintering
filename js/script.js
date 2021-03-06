@@ -1,13 +1,22 @@
 let navItems = document.getElementById("nav-items"),
 vof = false,vof2 = false,
-emergente = document.getElementById("emergente"), 
+emergente = document.getElementById("emergente"),
+emergenteDos = document.getElementById("emergente-2"),  
 nodo = document.getElementById("formulario-emergente"),
 nuevo = nodo.cloneNode(true),
 burgerDiv = document.querySelectorAll(".burger-div"),
-cross = document.querySelectorAll(".cross");
+cross = document.querySelectorAll(".cross"),
+contactForm = document.getElementById("contact-form").cloneNode(true),
+descargarPresentacion = document.getElementById("f1"),
+btnEnviar = document.getElementById("btn-enviar");
+let variable
 
-
-
+descargarPresentacion.addEventListener("click", e =>{
+   
+    variable = nuevo;
+    emergente.classList.remove("emergente-no")
+    emergente.appendChild(variable)
+})
 document.addEventListener("click", e =>{
     if(e.target.matches(".nav-item")){ 
         navItems.classList.remove("nav-in");
@@ -45,20 +54,44 @@ document.addEventListener("click", e =>{
           vof=false;
       }   
     }
-    else if(e.target.matches(".sp")){
-      window.scrollTo({
-          behavior:"smooth",
-          top: document.documentElement.scrollHeight
-      })
-    }
-    else if(e.target.matches(".down-guia")){  
+    // else if(e.target.matches(".sp")){
+    //   window.scrollTo({
+    //       behavior:"smooth",
+    //       top: document.documentElement.scrollHeight
+    //   })
+    // }
+    else if(e.target.matches(".f1") || e.target.matches("#f1")){  
+      variable = nuevo;
       emergente.classList.remove("emergente-no")
-      emergente.appendChild(nuevo)
+      emergente.appendChild(variable)
       
     }
+    else if(e.target.matches(".f2")){
+      variable = nuevo;
+      variable.querySelector(".titulo-intercambiable").textContent = "Descargáte nuestra guía sobre el sinterisado";
+      emergente.classList.remove("emergente-no")
+      emergente.appendChild(variable)
+      
+    }
+
+    else if(e.target.matches(".f3")){
+      contactForm.querySelector(".contact-title").textContent = "Solicitar presupuesto"
+      variable = contactForm;
+      emergenteDos.classList.remove("emergente-no")
+      emergenteDos.appendChild(variable)
+      variable.querySelector("button").innerHTML = 'Solicitar<img src="assets/img/arrow.png" alt="arrow" class="arrow">'
+      
+    }
+
     else if(e.target.matches(".emergente")){
-      emergente.removeChild(nuevo)
+      emergente.removeChild(variable)
       emergente.classList.add("emergente-no")
+      
+    }
+    
+    else if(e.target.matches(".emergente-2")){
+      emergenteDos.removeChild(variable)
+      emergenteDos.classList.add("emergente-no")
       
     }
 

@@ -18,7 +18,25 @@ main {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .t1 {
+    line-height: 28px;
+  }
+  .t3 {
+    font-size: 21px;
+    line-height: 20px;
+  }
+  .t4 {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .t9-y-medio {
+    font-size: 17px;
+  }
+  .t14, .t15 {
+    font-size: 17px;
+    padding: 0 20px;
+  }
   .nav-bar .nav-items {
     height: 90%;
   }
@@ -67,6 +85,9 @@ main {
   }
   .seccion-1 .flex-2 .sectores-relevantes {
     width: 50%;
+  }
+  .seccion-1 .flex-2 .sectores-relevantes .black-div .sec-rel {
+    margin-top: -45px;
   }
   .seccion-1 .flex-2 .sectores-relevantes .black-div .to-form {
     width: -webkit-fit-content;
@@ -140,7 +161,7 @@ main {
     width: 95%;
   }
   .seccion-2 .cards .card-1, .seccion-2 .cards .card-2, .seccion-2 .cards .card-3 {
-    width: 32%;
+    width: 33%;
     height: 280px;
   }
   .seccion-2 .cards .card-1 .sub, .seccion-2 .cards .card-2 .sub, .seccion-2 .cards .card-3 .sub {

@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'SF UI Display Ultralight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Ultralight'), url('../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'SF UI Display Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Thin'), url('../assets/fonts/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+    }
+        
+        
+    @font-face {
+    font-family: 'SF UI Display Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Light'), url('../assets/fonts/sf-ui-display-light-58646b33e0551.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Medium'), url('../assets/fonts/sf-ui-display-medium-58646be638f96.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Semibold'), url('../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Bold'), url('../assets/fonts/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Heavy'), url('../assets/fonts/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Black'), url('../assets/fonts/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+    }
+    $white: #ffffff;
+    $whiteBGOpacity:#ffffffd9;
+    $blackFont:#424242;
+    $blue:#009fe4;
+    $Ultralight:'SF UI Display Ultralight';
+    $Thin:'SF UI Display Thin';
+    $Light:'SF UI Display Light';
+    $Medium:'SF UI Display Medium';
+    $Semibold:'SF UI Display Semibold';
+    $Bold:'SF UI Display Bold';
+    $Heavy:'SF UI Display Heavy';
+    $Black:'SF UI Display Black';
+    
+/* Movil */
+body{
+    background-color: aqua;
+}
+.t1, .t2{
+    font-family: $Bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color:$blackFont;
+}
+
+.t3{
+    font-family: $Ultralight;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color:$blackFont;
+}
+
+.t4{
+    font-family: $Thin;
+    font-size: 20px;
+    line-height: 24px;
+    color:$blackFont;
+}
+
+.t5{
+    font-family: $Thin;
+    font-size: 16px;
+    line-height: 14px;
+    color:$white;
+}
+
+.t6{
+    font-family: $Bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color:$blackFont;
+    border-bottom: 4px solid $blue;
+    width: max-content;
+}
+
+.t7, .t16{
+
+    font-family: $Semibold;
+    font-size: 20px;
+    line-height: 24px;
+    color:$blackFont;
+
+}
+
+.t8{
+    font-family: $Thin;
+    font-size: 18px;
+    line-height: 20px;
+    color:$blackFont;
+}
+
+.t9{
+    font-family: $Bold;
+    font-size: 30px;
+    line-height: 35px;
+    color:$blue;
+}
+
+.t9-y-medio{
+    font-family: $Thin;
+    font-size: 20px;
+    line-height: 20px;
+    color:$white;
+}
+
+.t10{
+    font-family: $Thin;
+    font-size: 15px;
+    line-height: 18px;
+    color:$blackFont;
+}
+
+.t11{
+    font-family: $Light;
+    font-size: 18px;
+    line-height: 20px;
+    color:$blackFont;
+}
+
+.t12, .t17{
+    font-family: $Thin;
+    font-size: 18px;
+    line-height: 20px;
+    color:$blackFont;
+}
+
+.t13{
+    font-family: $Thin;
+    font-size: 18px;
+    line-height: 20px;
+    color:$blackFont;
+}
+
+.t14, .t15{
+    font-family: $Thin;
+    font-size: 20px;
+    line-height: 24px;
+    color:$blackFont;
+}
+
+.t2, .t15, .t16, .t17{
+    color: $white;
+}
+
+.t18{
+    font-family: $Bold;
+    font-size: 30px;
+    line-height: 28px;
+    color:$white;
+}
+

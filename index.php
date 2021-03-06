@@ -21,7 +21,7 @@
             <a href="#item2" class="nav-item" data-scroll-spy>EMPRESA</a>
             <a href="#item3" class="nav-item" data-scroll-spy>CLIENTES</a>
             <a href="#item4" class="nav-item" data-scroll-spy>CONTACTO</a>
-            <a href="#" class="nav-item" style="text-align: center;">DESCARGA PRESENTACION<br>CORPORATIVA</a>
+            <p class="nav-item f1" style="text-align: center;" id="f1">DESCARGA PRESENTACION<br>CORPORATIVA</p>
             
             <div class="tel-lang" id="tel-lang">
                 <p class="tel">+94683 51 33</p>
@@ -51,11 +51,11 @@
         <header class="section-0 section" id="item0" data-scroll-spy>
             <div class="box box-1" >
                 <div class="s-box">
-                    <h1 class="black-title">¿Qué es el sinterisado?</h1>
-                    <h2 class="sub-t1">un método de producción de piezas que puede
+                    <h1 class="t1">¿Qué es el sinterisado?</h1>
+                    <h2 class="t3">un método de producción de piezas que puede
                         aportarte <span class="celeste">grandes beneficios</span>
                     </h2>
-                    <h3 class="sub-t2">En MFS Sintering estamos especializados en la
+                    <h3 class="t4">En MFS Sintering estamos especializados en la
                         producción en gran escala de piezas metálicas
                     </h3>
                     <div class="calidad">
@@ -66,8 +66,8 @@
             </div>
             <div class="box box-2 d-none" id="formulario-emergente">
                 <div class="s-box">
-                    <h1 class="text-1">Descarga la presentación
-                        corporativo y conoce nuestras capacidades
+                    <h1 class="text-1 titulo-intercambiable t18">Descarga nuestra presentación
+                        corporativa y conoce nuestras capacidades
                     </h1>
                     <form action="./php/send.php" method="post" class="grid-form">
                         <input type="text"  name="nombre" class="inp" placeholder="Nombre" required>
@@ -88,27 +88,28 @@
                     
                 </div>
             </div>
-            <div class="popup-form btn-none down-guia">
-                <p class="p-to-popup down-guia">
+            <div class="popup-form btn-none f1">
+                <p class="p-to-popup t5 f1">
                     Descargar presentación corporativa
                 </p>
-                <img src="assets/img/arrow.png" alt="arrow" class="arrow2 down-guia">
+                <img src="assets/img/arrow.png" alt="arrow" class="arrow2 f1">
             </div>
         </header>
 
         <section class="emergente emergente-no" id="emergente"></section>
+        <section class="emergente-2 emergente-no" id="emergente-2"></section>
         <!-- SINTERIZADO -->
         <section class="seccion-1 section" id="item1" data-scroll-spy>
             <article class="flex-1">
                 <div class="flex-1-h">
-                    <h2 class="t-subrayado">sinterizado</h2>
-                    <h1 class="black-title">
+                    <h2 class="t6">sinterizado</h2>
+                    <h1 class="t1">
                         Descubre las ventajas
                         de la pulvimetalurgia
                     </h1>
                 </div>
                 <div class="flex-1-p">
-                    <p class="sub-indice">
+                    <p class="t7">
                         El sinterizado es un proceso que consiste en aplicar presión y alta
                         termperatura a un material en polvo. De esta manera el material se compacta y
                         forma una pieza sólida. Es un proceso prodictivo muy ventajoso respecto los
@@ -120,36 +121,54 @@
 
             <article class="flex-2">
                 <div class="grid-lista">
-                    <img src="assets/img/checkblue.png" alt="check" class="checkblue"><p class="lista-p"> Menores costes en la producción de series largas</p>
-                    <img src="assets/img/checkblue.png" alt="check" class="checkblue"><p class="lista-p"> Proceso eficiente medioambientalmente, con mayor aprovechamiento de la materia prima</p>
-                    <img src="assets/img/checkblue.png" alt="check" class="checkblue"><p class="lista-p"> Elimina las operaciones complementarias como el mecanizado, sacando la pieza directamente de molde  </p>
-                    <img src="assets/img/checkblue.png" alt="check" class="checkblue"><p class="lista-p"> Garantiza las características de resistencia exacta de cada pieza</p>
-                    <img src="assets/img/checkblue.png" alt="check" class="checkblue"><p class="lista-p"> Permite la producción de piezas autolubricadas</p>
-                    <img src="assets/img/checkblue.png" alt="check" class="checkblue"><p class="lista-p"> Posibilita el uso de materiales únicos e isotrópicos</p>
+                    <img src="assets/img/checkblue.png" alt="check" class="checkblue">
+                    <p class="lista-p t8"> 
+                        Menores costes en la producción de series largas
+                    </p>
+                    <img src="assets/img/checkblue.png" alt="check" class="checkblue">
+                    <p class="lista-p t8"> 
+                        Proceso eficiente medioambientalmente, con mayor aprovechamiento de la materia prima
+                    </p>
+                    <img src="assets/img/checkblue.png" alt="check" class="checkblue">
+                    <p class="lista-p t8"> 
+                        Elimina las operaciones complementarias como el mecanizado, sacando la pieza directamente de molde
+                    </p>
+                    <img src="assets/img/checkblue.png" alt="check" class="checkblue">
+                    <p class="lista-p t8"> 
+                        Garantiza las características de resistencia exacta de cada pieza
+                    </p>
+                    <img src="assets/img/checkblue.png" alt="check" class="checkblue">
+                    <p class="lista-p t8"> 
+                        Permite la producción de piezas autolubricadas
+                    </p>
+                    <img src="assets/img/checkblue.png" alt="check" class="checkblue">
+                    <p class="lista-p t8"> 
+                        Posibilita el uso de materiales únicos e isotrópicos
+                    </p>
                 </div>
 
                 <section class="sectores-relevantes">
                     
                     <div class="black-div">
-                        <h1 class="sec-rel-title">Sectores relevantes</h1>
-                        <p class="black-div-p">Línea Blanca</p>
+                        <h1 class="t9 sec-rel">Sectores relevantes</h1>
+                        <p class="t9-y-medio" >Línea Blanca</p>
                         <div class="degre-box"></div>
-                        <p class="black-div-p">Herramienta eléctrica</p>
+                        <p class="t9-y-medio">Herramienta eléctrica</p>
                         <div class="degre-box"></div>
-                        <p class="black-div-p">Automatización</p>
+                        <p class="t9-y-medio">Automatización</p>
                         <div class="degre-box"></div>
-                        <p class="black-div-p">Cerrajería y Control de accesos</p>
+                        <p class="t9-y-medio">Cerrajería y Control de accesos</p>
                         <div class="degre-box"></div>
-                        <p class="black-div-p">Sector eléctrico</p>
+                        <p class="t9-y-medio">Sector eléctrico</p>
                         <div class="degre-box"></div>
 
-                        <div class="to-form down-guia">
-                            <p class="to-form-p down-guia">Descárgate nuestra guía sobre el sinterizado</p>
-                            <img src="assets/img/arrow.png" alt="arrow" class="arrow-3 down-guia">
+                        <div class="to-form down-guia f2">
+                            <p class="t10 f2">Descárgate la guía del sinterizado</p>
+                            <img src="assets/img/arrow.png" alt="arrow" class="arrow-3 down-guia f2">
                         </div>
-                        <div class="to-form sp">
-                                <p class="to-form-p sp">Solicita Presupuesto</p>
-                                <img src="assets/img/arrow.png" alt="arrow" class="arrow-3 sp">
+                        <div class="to-form sp f3">
+                                <p class="t10 sp f3">Solicita Presupuesto</p>
+                                <img src="assets/img/arrow.png" alt="arrow" class="arrow-3 sp f3">
                         </div>
                     </div>
                 </section>
@@ -162,16 +181,17 @@
                 <img src="assets/img/arrow-down.png" alt="arrow-down">
             </a>
         </div>
-        
+        <!-- SECCIÓN EMPRESA, RECURSOS Y CAPACIDADES -->
         <section class="section" id="item2" data-scroll-spy>
+           <!-- SECCIÓN 2 EMPRESA----------------> 
             <section class="seccion-2 section" >
                 <article class="flex-empresa">
                     <div class="esp-en-sin">
-                        <h2 class="t-subrayado">empresa</h2>
-                        <h1 class="black-title">
+                        <h2 class="t6">empresa</h2>
+                        <h1 class="t1">
                             Especialistas en sinterizado
                         </h1>
-                        <p class="sub-t2 p-text">
+                        <p class="t11 p-text">
                             En MFS contamos con mas de 80 años de experiencia en el 
                             sector P/M, fabricando componentes metálicos para los
                             principales Tier-1 y OEM mundiales
@@ -180,29 +200,29 @@
                         </p>
                     </div>
                     <div class="empresa-img">
-                        <p class="sub-indice como-trabajamos-tablet">¿Cómo trabajamos?</p>
+                        <p class="sub-indice como-trabajamos-tablet t11">¿Cómo trabajamos?</p>
                         <div class="img-emp">
                             <img src="assets/img/ECO_GRIS.png" alt="imagen">
-                            <p class="img-emp-p">Sostenibilidad</p>
+                            <p class="img-emp-p t12">Sostenibilidad</p>
                         </div>
                         <div class="img-emp">
                             <img src="assets/img/I+D_GRIS.png" alt="imagen">
-                            <p class="img-emp-p">I + D + I</p>
+                            <p class="img-emp-p t12">I + D + I</p>
                         </div>
                         <div class="img-emp">
                             <img src="assets/img/checkgris.png" alt="imagen">
-                            <p class="img-emp-p">Satisfacción</p>
+                            <p class="img-emp-p t12">Satisfacción</p>
                         </div>
                     </div>
 
-                    <p class="sub-indice como-trabajamos-movil">¿Cómo trabajamos?</p>
+                    <p class="sub-indice como-trabajamos-movil t11">¿Cómo trabajamos?</p>
                 </article>
 
                 <article class="cards">
                     <div class="card-1">
                         <p class="number">01</p>
-                        <h1 class="black-title card-title">Estudio</h1>
-                        <p class="sub-t2 sub">
+                        <h1 class="t1">Estudio</h1>
+                        <p class="t14">
                             - Factibilidad <br>
                             - Diseño de la pieza <br>
                             - Propuestas de mejora <br>
@@ -217,8 +237,8 @@
                     </div>
                     <div class="card-2">
                         <p class="number">02</p>
-                        <h1 class="white-title card-title">Utillaje</h1>
-                        <p class="sub-t2-white sub-p sub ">
+                        <h1 class="t2">Utillaje</h1>
+                        <p class="t15 pdn">
                             -Dpto. Troquelaría interno para
                             la fabricación completa de utillaje
                         </p>
@@ -231,8 +251,8 @@
                     </div>
                     <div class="card-3">
                         <p class="number">03</p>
-                        <h1 class="white-title card-title">producción</h1>
-                        <p class="sub-t2-white sub">
+                        <h1 class="t2">producción</h1>
+                        <p class="t15">
                             - Mezclado <br>
                             - Moldeo <br>
                             - Sinterizado <br>
@@ -244,13 +264,13 @@
                 </article>>
 
             </section>
-            <div class="to-form-under-section-2 sp">
-                <p class="p-under sp">
+            <div class="to-form-under-section-2 sp f3">
+                <p class="sp t10 f3">
                     Solicitar presupuesto
                 </p>
-                <img src="assets/img/arrow.png" alt="arrow" class="arrow-5 sp">
+                <img src="assets/img/arrow.png" alt="arrow" class="arrow-5 sp f3">
             </div>
-            <!-- CARROUSEL -->
+<!-------------CARROUSEL ------------------------>
             <section class="carrousel">
                 <div class="container">
                     <button class="previous button btn-pan">
@@ -306,51 +326,72 @@
                     </nav>
                 </div>
             </section>
-            <!-- RECURSOS Y CAPACIDADES -->
+<!-- SECCIÓN 3 -- -RECURSOS Y CAPACIDADES -->
             <section class="seccion-3">
                 <article class="recursos">
-                    <h1 class="black-title blue-text">Recurso</h1>
+                    <h1 class="t1 rec">Recurso</h1>
                     <div class="box-inclinada">
-                        <ul class="list-box-1">
-                            <li class="box-li">
+                        <div class="list-box-1">
+                            <img src="assets/img/checkgris50x50.png" alt="check" class="checkblue">
+                            <p class="t17"> 
                                 Más de 100 empleados
-                            </li>
-                            <li class="box-li">
-                                26 líneas de producción con prensas
-                                desde 5t hasta 250t
-                            </li>
-                            <li class="box-li li-3">
+                            </p>
+                            <img src="assets/img/checkgris50x50.png" alt="check" class="checkblue">
+                            <p class="t17"> 
+                                26 líneas de producción con prensas desde 5t hasta 250t
+                            </p>
+                            <img src="assets/img/checkgris50x50.png" alt="check" class="checkblue">
+                            <p class="t17"> 
                                 Instalaciones de 35.000m2
-                            </li>
+                            </p>
+                            <img src="assets/img/checkgris50x50.png" alt="check" class="checkblue">
+                            <p class="t17"> 
+                                Producción de Nitrógeno propia e instalación de 15.000m2 de placas solares fotovoltaicas
+                            </p>
                             <img src="assets/img/eco-friendly-logo-.png" alt="eco-friendly" class="eco-friendly">
-                            <li class="box-li">
-                                Producción de Nitrógeno propia e Instalaciones
-                                de 15.000m2 de placas solares fotovoltaicas
-                            </li>
-                            
-                        </ul>
+                        </div>
                     </div>
                 </article>
                 <article class="capacidades">
-                    <h1 class="black-title blue-text">capacidades</h1>
+                    <h1 class="t1 cap">capacidades</h1>
                     <div class="box-inclinada">
-                        <ul class="list-box-1">
-                            <li class="box-li">
+                        <div class="list-box-1">
+                            
+                            <img src="assets/img/checkgris50x50.png" alt="check" class="checkblue">
+                            <p class="t17"> 
+                                Diseño e  ingeniería de las piezas
+                            </p>
+                            <img src="assets/img/checkgris50x50.png" alt="check" class="checkblue">
+                            <p class="t17"> 
+                                Producción de hasta 90 millones de 
+                                piezas al año
+                            </p>
+                            <img src="assets/img/checkgris50x50.png" alt="check" class="checkblue">
+                            <p class="t17"> 
+                                Concepción y fabricación de utillaje propio
+                            </p>
+                            <img src="assets/img/checkgris50x50.png" alt="check" class="checkblue">
+                            <p class="t17"> 
+                                Sistema MES integrado al ERP con control total de 
+                                la calidad producción y stocks en tiempo real
+                            </p>
+                    
+                            <!-- <li class="t17">
                                 Diseño e  ingeniería de las piezas
                             </li>
-                            <li class="box-li">
+                            <li class="t17">
                                 Producción de hasta 90 millones de 
                                 piezas al año
                             </li>
-                            <li class="box-li li-3">
+                            <li class="t17 li-3">
                                 Concepción y fabricación de utillaje propio
                             </li>
-                            <li class="box-li">
+                            <li class="t17">
                                 Sistema MES integrado al ERP con control total de 
                                 la calidad producción y stocks en tiempo real
-                            </li>
+                            </li> -->
                             
-                        </ul>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -363,14 +404,14 @@
         
         <section class="seccion-4 section" id="item3" data-scroll-spy>
             <article class="clientes">
-                <h2 class="t-subrayado-white clientes-title">
+                <h2 class="t20 clientes-title">
                     clientes
                 </h2>
-                <h1 class="white-title aval">
+                <h1 class="t2 aval">
                     nuestro mejor aval
                 </h1>
 
-                <p class="sub-t2-white">
+                <p class="t21">
                     Empresas de reconocido prestigio
                     confían en nosotros para la fabricación
                     de sus piezas
@@ -379,7 +420,7 @@
             </article>
         </section>
 
-        <!-- CARROUSEL -->
+        <!---------- CARROUSEL ------------------>
         <section class="carrousel-2">
         <div class="slider">
 	<div class="slide-track">
@@ -438,16 +479,16 @@
         <section class="seccion-5 section" id="item4" data-scroll-spy>
             <div class="bg-opaco">
                 <article class="contacto">
-                    <h2 class="t-subrayado-white clientes-title">
+                    <h2 class="t20 clientes-title">
                         contacto
                     </h2>
-                    <h1 class="white-title aval">
+                    <h1 class="t2 aval">
                         Si quieres analizar la posibilidad
                         de producir tus piezas mediante el 
                         sinterisado, contacta con nosotros
                     </h1>
 
-                    <p class="sub-t2-white">
+                    <p class="t17">
                         MFS-Sinteing,<br>
                         Carretera San Vicente 10, 48510 <br>
                         Trapagaran, Vizcaya, Spain <br>
@@ -455,8 +496,8 @@
                     </p>
 
                 </article>
-                <div class="formulario-de-contacto">
-                    <h1 class="contact-title">Contáctanos</h1>
+                <div class="formulario-de-contacto" id ="contact-form">
+                    <h1 class="contact-title t18">Contáctanos</h1>
                     <form action="./php/contact.php" class="contact-form" method="post">
                         <input type="text" name="nombre" placeholder="Nombre" class="i1" required>
                         <input type="text" name="apellido" placeholder="Apellido" class="i1" required>
@@ -474,7 +515,7 @@
                             privacidad</p> 
                         </label>
                         <div class="enviar i2">
-                            <button type="submit" class="btn-enviar">
+                            <button type="submit" class="btn-enviar" id="btn-enviar">
                                 Enviar 
                                 <img src="assets/img/arrow.png" alt="arrow" class="arrow">
                             </button>

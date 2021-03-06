@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'SF UI Display Ultralight';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Ultralight"), url("../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Thin"), url("../assets/fonts/sf-ui-display-thin-58646e9b26e8b.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Light"), url("../assets/fonts/sf-ui-display-light-58646b33e0551.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Medium"), url("../assets/fonts/sf-ui-display-medium-58646be638f96.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Semibold"), url("../assets/fonts/sf-ui-display-semibold-58646eddcae92.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Bold"), url("../assets/fonts/sf-ui-display-bold-58646a511e3d9.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Heavy"), url("../assets/fonts/sf-ui-display-heavy-586470160b9e5.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF UI Display Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Black"), url("../assets/fonts/sf-ui-display-black-58646a6b80d5a.woff") format("woff");
+}
+
+/* Movil */
+body {
+  background-color: aqua;
+}
+
+.t1, .t2 {
+  font-family: "SF UI Display Bold";
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.t3 {
+  font-family: "SF UI Display Ultralight";
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.t4 {
+  font-family: "SF UI Display Thin";
+  font-size: 20px;
+  line-height: 24px;
+  color: #424242;
+}
+
+.t5 {
+  font-family: "SF UI Display Thin";
+  font-size: 16px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.t6 {
+  font-family: "SF UI Display Bold";
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #424242;
+  border-bottom: 4px solid #009fe4;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.t7, .t16 {
+  font-family: "SF UI Display Semibold";
+  font-size: 20px;
+  line-height: 24px;
+  color: #424242;
+}
+
+.t8 {
+  font-family: "SF UI Display Thin";
+  font-size: 18px;
+  line-height: 20px;
+  color: #424242;
+}
+
+.t9 {
+  font-family: "SF UI Display Bold";
+  font-size: 30px;
+  line-height: 35px;
+  color: #009fe4;
+}
+
+.t9-y-medio {
+  font-family: "SF UI Display Thin";
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.t10 {
+  font-family: "SF UI Display Thin";
+  font-size: 15px;
+  line-height: 18px;
+  color: #424242;
+}
+
+.t11 {
+  font-family: "SF UI Display Light";
+  font-size: 18px;
+  line-height: 20px;
+  color: #424242;
+}
+
+.t12, .t17 {
+  font-family: "SF UI Display Thin";
+  font-size: 18px;
+  line-height: 20px;
+  color: #424242;
+}
+
+.t13 {
+  font-family: "SF UI Display Thin";
+  font-size: 18px;
+  line-height: 20px;
+  color: #424242;
+}
+
+.t14, .t15 {
+  font-family: "SF UI Display Thin";
+  font-size: 20px;
+  line-height: 24px;
+  color: #424242;
+}
+
+.t2, .t15, .t16, .t17 {
+  color: #ffffff;
+}
+
+.t18 {
+  font-family: "SF UI Display Bold";
+  font-size: 30px;
+  line-height: 28px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
